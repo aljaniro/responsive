@@ -1,0 +1,131 @@
+/* section main*/
+.hero{
+  height: 80vh;
+  background-image:linear-gradient(rgba(16,16,16, .8),rgba(16,16,16, .8)) ,url(https://1.bp.blogspot.com/-BAjlgBOz79g/XyF7DktxhWI/AAAAAAAAAPg/AeDe3-ArCxMS8ANo4yjMa5UveWIlOoQcQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Re%2BZero%2B3.jpg);
+ background-size: cover;
+ max-width: 100%;
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+ grid-template-rows: repeat(8,1fr);
+}
+.hero .info-container{
+  grid-column: 7/10;
+  grid-row: 4/7;
+  color: white;
+}
+
+.hero h1{
+ color: rgb(255, 200, 80); ;
+font-size: 5em;
+}
+.hero p{
+  font-weight: 300;
+}
+
+.hero .btn{
+  font-size: 1em;
+  background: none;
+  color:  rgb(255, 200, 80);
+  padding: 10px 20px;
+  border: 1px solid  rgb(255, 200, 80);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.hero .btn:hover{
+  background:  rgb(255, 200, 80) ;
+  color: white;
+}
+
+
+/* footer */
+.footer{
+display: grid;
+height: 100px;
+align-items: center;
+background-color: #181818;
+color: white;
+grid-template-areas:
+"vistas follow-me social-network";
+}
+
+.footer .vistas{
+  grid-template-areas: vistas;
+  display: flex;
+  justify-content: center;
+  background-color:rgb(255, 200, 80) ;
+  align-content: center;
+  padding: 26px;
+  color: #181818;
+}
+.footer .vistas i{
+  font-size: 2em;
+  margin-right: 15px;
+}
+.footer .follow-me{
+  grid-template-areas: follow-me;
+  display: flex;
+  justify-content: center;
+  background-color:none;
+  padding: 26px;
+  color: white;
+}
+
+.footer .social-network{
+  grid-template-areas: social-network;
+  font-size: 2em;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 200, 80);
+
+
+}
+
+.fa-facebook:hover{
+  color:white;
+}
+.fa-instagram:hover{
+  color:white;
+}
+.fa-twitter:hover{
+  color:white;
+}
+.fa-whatsapp:hover{
+  color:white;
+}
+
+@media only screen and (max-width: 600px)  {
+  .hero .info-container{
+    grid-column: 2/10;
+    grid-row: 4/8;
+
+  }
+  .hero h1{
+    font-size: 3em;
+  }
+  .footer .follow-me{
+    display: none;
+  }
+  .fa-facebook:hover{
+    color:white;
+  }
+  .fa-instagram:hover{
+    color:white;
+  }
+  .fa-twitter:hover{
+    color:white;
+  }
+  .fa-whatsapp:hover{
+    color:white;
+  }
+  .footer .social-network{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}
